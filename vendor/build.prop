@@ -208,6 +208,8 @@ ro.config.ringtone_2=Atomic_Bell.ogg
 ro.config.notification_sound_2=Signal.ogg
 ro.config.vc_call_vol_steps=8
 ro.camera.notify_nfc=1
+
+#SwxROM
 debug.sf.hw=0
 debug.egl.hw=0
 ro.hardware.vulkan=adreno
