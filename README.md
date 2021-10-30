@@ -39,7 +39,7 @@ I'm just going to share all the changes of Swx ROM for the Galaxy A70 device.
 - Custom wallpapers
 - and more...
 
-# Installation:
+# Installation
 - Format data
 - Reboot recovery
 - Flash ROM (Answer the installation questions with the volume buttons)
