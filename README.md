@@ -40,7 +40,7 @@ I'm just going to share all the changes of Swx ROM for the Galaxy A70 device.
 - and more...
 
 # Installation:
-1 Format data
-2 Reboot recovery
-3 Flash ROM (Answer the installation questions with the volume buttons)
-4 Reboot system
+- Format data
+- Reboot recovery
+- Flash ROM (Answer the installation questions with the volume buttons)
+- Reboot system
