@@ -6,7 +6,7 @@ I'm just going to share all the changes of Swx ROM for the Galaxy A70 device.
 
 ![](https://img.shields.io/badge/Swx%20ROM-v6.2-blue)
 
-# Features List
+## Features List
 - Based on the latest firmware available for Galaxy A70 with September security patch (In ROM version 6.1)
 - Installation based on Dynamic Installer 3.3 by BlassGO
 - Debloat (Some debloats are optional)
@@ -39,7 +39,7 @@ I'm just going to share all the changes of Swx ROM for the Galaxy A70 device.
 - Custom wallpapers
 - and more...
 
-# Installation
+## Installation
 - Format data
 - Reboot recovery
 - Flash ROM (Answer the installation questions with the volume buttons)
