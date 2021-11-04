@@ -1,0 +1,102 @@
+#!/sbin/sh
+#Dynamic Installer by @BlassGO
+#Also uses code from @osm0sis and @topjohnwu
+#SETUP
+ui_print() {
+  if ! $BOOTMODE; then
+     echo "ui_print $1
+       ui_print" >> $OUTFD
+  else 
+    echo "$1"
+  fi
+}
+get() {
+  unzip -o "$installzip" "META-INF/zbin/$1" -p > "$2/$1"
+  chmod +x "$2/$1" || echo "Cant set: $1"
+  if [ ! -e "$2/$1" ]; then ui_print "ERROR: Cant get $1" && exit 1; fi;
+}
+setup_bb() {
+   #Ensure /system/bin/sh
+   if [ ! -f /system/bin/sh ]; then
+      umount -l /system 2>/dev/null
+      mkdir -p /system/bin
+      ln -sf "$(command -v sh)" /system/bin/sh
+   fi
+   if [ -e "$bb" ]; then
+     if ! $bb --install -s "$l"; then
+        for i in $($bb --list); do
+          if ! ln -sf "$bb" "$l/$i" && ! $bb ln -sf "$bb" "$l/$i" && ! $bb ln -f "$bb" "$l/$i"; then
+            # create script wrapper if symlinking and hardlinking failed because of restrictive selinux policy
+            if ! echo "#!$bb" > "$l/$i" || ! chmod +x "$l/$i" ; then
+              ui_print "ERROR: Failed to setup busybox"
+              exit 1
+            fi
+          fi
+        done
+     fi
+   else
+      ui_print "ERROR: Cant find busybox"
+      exit 1
+   fi
+   if [ ! -f "$l/sh" ]; then ui_print " ERROR: Failed to setup busybox" && exit 1; fi
+}
+setup() {
+  ( rm -rf "$l"
+  rm -rf "$TMP/zbin"
+  rm -f "$bb"
+  rm -f "$bs"
+  rm -f "$TMP/bin"
+  rm -f "$TMP/bin.xz"
+  rm -f "$TMP/core" ) 2>/dev/null
+  mkdir -p "$l"
+  mkdir -p "$TMP/zbin"
+  if [[ ! -d "$l" && ! -d "$TMP/zbin" ]]; then
+    ui_print "Cant startup"
+    exit 1
+  fi
+  get busybox "$TMP"
+  get bash "$TMP"
+  get bin "$TMP"
+  get core "$TMP"
+  setup_bb
+  export PATH="$l:$PATH"
+  mv -f "$TMP/bin" "$TMP/bin.xz" >/dev/null 2>&1
+  xz -d "$TMP/bin.xz" >/dev/null 2>&1
+  if [ ! -e "$TMP/bin" ]; then ui_print "setup: Cant get bin" && exit 1; fi;
+  unzip -qo "$TMP/bin" -d "$TMP/zbin" 
+  find "$TMP/zbin" -type f -exec mv -f {} "$l" \;
+  find "$l" -type f -exec chmod 777 {} +;
+  PATH="$PATH:/system/bin" "$bs" "$TMP/core" "$@"
+  if [[ "$?" == "130" ]]; then exit 1; else exit 0; fi
+}
+setenforce 0
+ps | grep zygote | grep -v grep >/dev/null && export BOOTMODE=true || export BOOTMODE=false
+$BOOTMODE || ps -A  | grep zygote | grep -v grep >/dev/null && export BOOTMODE=true
+if ! $BOOTMODE; then 
+   #Global vars
+   export TMP=/tmp
+   export TMPDIR="$TMP"
+   export OUTFD="/proc/self/fd/$2"
+   export installzip="$3"
+   export addons="$TMP/addons"
+   export l="$TMP/ugu"
+   bb="$TMP/busybox"
+   bs="$TMP/bash"
+   setup
+else
+   umask 022
+   #Global vars
+   export TMP=/dev/tmp
+   export TMPDIR="$TMP"
+   export OUTFD="$2"
+   export ZIPFILE="$3"
+   export installzip="$3"
+   export DNM=META-INF/com/google/android/magisk
+   export PERSISTDIR=/sbin/.magisk/mirror/persist
+   export addons="$TMP/addons"
+   export l="$TMP/ugu"
+   bb="$TMP/busybox"
+   bs="$TMP/bash"
+   setup
+fi
+ 

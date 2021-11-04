@@ -1,0 +1,195 @@
+#-----------Dynamic Installer Configs-----------#
+#The #MAGISK tag is required, dont remove it
+#MAGISK          
+setdefault magisk_support off
+setdefault run_addons off
+setdefault apex_mount off
+setdefault extraction_speed default
+setdefault devices "SM-A705MN"
+#-----------------------------------------------#
+#Your script starts here:
+
+#Banner
+ui_print " "
+fprint_zip banner.txt
+
+#Menu prints
+press() {
+   ui_print " ___________________________________________"
+   ui_print "| Volume up = YES     |    Volume down = NO |"
+   ui_print " -------------------------------------------"
+}
+
+default() {
+   ui_print " ____________________________________________"
+   ui_print "| Volume up = Samsung | Volume down = Google |"
+   ui_print " --------------------------------------------"
+}
+
+#selections
+ui_print " "
+ui_print " Do you want to keep Chrome?"
+press
+if $yes; then
+   chrome=true
+   ui_print " -- Ok, the app will be preserved... "
+   ui_print " "
+else
+   ui_print " -- The app will be deleted... "
+   ui_print " "
+fi
+
+ui_print " "
+ui_print " Do you want to keep Game Launcher?"
+press
+if $yes; then
+   game=true
+   ui_print " -- Ok, the apps will be preserved... "
+   ui_print " "
+else
+   ui_print " -- The apps will be deleted... "
+   ui_print " "
+fi
+
+ui_print " "
+ui_print " Do you want to keep Digital Wellbeing?"
+press
+if $yes; then
+   digital=true
+   ui_print " -- Ok, the app will be preserved... "
+   ui_print " "
+else
+   ui_print " -- The app will be deleted... "
+   ui_print " "
+fi
+
+ui_print " "
+ui_print " Do you want to keep Bixby and Samsung Cloud?"
+press
+if $yes; then
+   bixby=true
+   ui_print " -- Ok, the apps will be preserved... "
+   ui_print " "
+else
+   ui_print " -- The apps will be deleted... "
+   ui_print " "
+fi
+
+ui_print " "
+ui_print " Do you want to add the camera features mod?"
+press
+if $yes; then
+   camera=true
+   ui_print " -- Ok, the mod will be added... "
+   ui_print " "
+else
+   ui_print " -- Stock file will be kept... "
+   ui_print " "
+fi
+
+ui_print " "
+ui_print " Do you want to install Gcam?"
+press
+if $yes; then
+   gcam=true
+   ui_print " -- Ok, the Gcam will be installed... "
+   ui_print " "
+else
+   ui_print " -- Will not install... "
+   ui_print " "
+fi
+
+ui_print " "
+ui_print " Do you want to install Magisk?"
+press
+if $yes; then
+   magisk=true
+   ui_print " -- Ok, magisk will be installed... "
+   ui_print " "
+else
+   ui_print " -- Will not install... "
+   ui_print " "
+fi
+
+#INSTALLING ROM
+ui_print " ----------------------------------------------- "
+ui_print "|                INSTALLING ROM                 |"
+ui_print " ----------------------------------------------- "
+
+#unmount partitions
+umount_all
+
+#progress
+show_progress 1.00 20
+
+#wipes
+ui_print " -- Wiping partitions... "
+
+#Installing SYSTEM IMG on /dev/block/sda23
+ui_print " -- Installing system... "
+update_zip -xz uwu.img.xz "$(find_block system)"
+
+#Installing VENDOR IMG on /dev/block/sda24
+ui_print " -- Installing vendor... "
+update_zip -xz owo.img.xz "$(find_block vendor)"
+
+#Installing PRODUCT IMG on /dev/block/sda25
+ui_print " -- Installing product... "
+update_zip -xz qwq.img.xz "$(find_block product)"
+
+#Installing BOOT IMG on /dev/block/sda21
+ui_print " -- Installing kernel stock... "
+update_zip -xz boot.img.xz "$(find_block boot)"
+
+#Installing DTBO IMG on /dev/block/sda20
+ui_print " -- Installing dtbo stock... "
+update_zip -xz dtbo.img.xz "$(find_block dtbo)"
+
+#OMC
+auto_mount_partitions
+ui_print " -- Adding csc Features... "
+. "$addons/omc.sh"
+
+#defined extract chrome
+if defined chrome; then
+   package_extract_dir "Extra/Chrome" /system
+fi
+
+#defined extract game
+if defined game; then
+   package_extract_dir "Extra/Game" /system
+fi
+
+#defined extract digital
+if defined digital; then
+   package_extract_dir "Extra/Digital" /system
+fi
+
+#defined extract bixby and Samsung Cloud
+if defined bixby; then
+   package_extract_dir "Extra/Bixby" /system
+   package_extract_dir "Extra/bixfloating" /vendor
+fi
+
+#defined extract camera features mod
+if defined camera; then
+   package_extract_dir "Extra/camera" /system
+fi
+
+#defined extract Gcam
+if defined gcam; then
+   package_extract_dir "Extra/Gcam" /system
+fi
+
+#defined extract magisk
+if defined magisk; then
+   ui_print " -- Installing Magisk..."
+   flash_addon log1 Magisk.zip
+fi
+
+#Unmount
+ui_print " "
+ui_print "        INSTALLATION SUCCESSFUL! :) "
+umount_all
+
+ui_print " "
