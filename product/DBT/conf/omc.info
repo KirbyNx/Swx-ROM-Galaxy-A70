@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-A705FN_OXM_DBT_RR_0006</version>
+  <model>
+    <name>SM-A705FN</name>
+  </model>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0005</customerEdition>
+    <cscfeature>yes</cscfeature>
+    <cscfeaturenetwork>yes</cscfeaturenetwork>
+    <carrierfeature>no</carrierfeature>
+    <cp>no</cp>
+    <imsupdate>no</imsupdate>
+  </catalog>
+  <carrierList>
+    <carrierCount>9</carrierCount>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>01</mnc>
+      <networkName>Telekom.de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>02</mnc>
+      <networkName>vodafone.de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>03</mnc>
+      <codeType>HEX</codeType>
+      <gid>010301</gid>
+      <networkName>o2 DE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>03</mnc>
+      <codeType>HEX</codeType>
+      <gid>010901</gid>
+      <networkName>o2 DE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>03</mnc>
+      <networkName>o2 - de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>06</mnc>
+      <networkName>Telekom.de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>07</mnc>
+      <codeType>HEX</codeType>
+      <gid>010901</gid>
+      <networkName>o2 DE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>07</mnc>
+      <networkName>o2 - de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>07</mnc>
+      <codeType>HEX</codeType>
+      <gid>010301</gid>
+      <networkName>o2 DE</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>
