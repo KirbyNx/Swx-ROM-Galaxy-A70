@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/device_info_software_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <Preference android:enabled="false" android:title="@string/one_ui_version_title" android:key="one_ui_version" android:summary="@string/summary_placeholder" android:shouldDisableView="false" settings:controller="com.samsung.android.settings.deviceinfo.softwareinfo.OneUIVersionPreferenceController" />
+    <Preference android:title="@string/firmware_version" android:key="os_firmware_version" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController" />
+    <Preference android:title="@string/module_version" android:key="module_version" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController" />
+    <Preference android:title="@string/baseband_version" android:key="base_band" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController" />
+    <Preference android:title="@string/kernel_version" android:key="kernel_version" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController" />
+    <Preference android:title="@string/build_number" android:key="build_number" android:summary="@string/summary_placeholder" settings:allowDividerAbove="true" settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController" />
+    <Preference android:enabled="false" android:title="@string/selinux_status" android:key="selinux_status" android:shouldDisableView="false" />
+    <Preference android:enabled="false" android:title="@string/omc_version" android:key="omc_version" android:summary="@string/summary_placeholder" android:shouldDisableView="false" />
+    <com.samsung.android.settings.deviceinfo.softwareinfo.SecPreferenceConfig android:layout="@layout/sec_widget_preference_config" android:key="config" android:shouldDisableView="false" />
+    <Preference android:title="CC mode status" android:key="cc_mode_status" android:fragment="com.samsung.android.settings.deviceinfo.softwareinfo.CCModeStatus" settings:controller="com.samsung.android.settings.deviceinfo.softwareinfo.CCModeStatusPreferenceController" />
+    <Preference android:enabled="false" android:title="@string/security_sw_version" android:key="security_sw_version" android:shouldDisableView="false" />
+    <Preference android:title="@string/security_patch" android:key="security_key" settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController" />
+</PreferenceScreen>
