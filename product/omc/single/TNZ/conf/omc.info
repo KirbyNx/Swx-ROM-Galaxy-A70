@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-A705MN_OLO_TNZ_RR_0009</version>
+  <model>
+    <name>SM-A705MN</name>
+  </model>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0006</customerEdition>
+    <cscfeature>yes</cscfeature>
+    <cscfeaturenetwork>yes</cscfeaturenetwork>
+    <carrierfeature>no</carrierfeature>
+    <cp>no</cp>
+    <imsupdate>no</imsupdate>
+  </catalog>
+  <carrierList>
+    <carrierCount>3</carrierCount>
+    <carrier>
+      <mcc>530</mcc>
+      <mnc>05</mnc>
+      <networkName>Spark NZ</networkName>
+    </carrier>
+    <carrier>
+      <mcc>530</mcc>
+      <mnc>05</mnc>
+      <spn>Skinny</spn>
+      <subsetCode>204</subsetCode>
+      <networkName>Skinny</networkName>
+    </carrier>
+    <carrier>
+      <mcc>530</mcc>
+      <mnc>99</mnc>
+      <spn>Spark NZ</spn>
+      <networkName>Spark NZ</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

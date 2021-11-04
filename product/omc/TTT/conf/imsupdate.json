@@ -1,0 +1,28 @@
+{
+    "note": "Add imsupdate for SM-A705MN with carrier = TTT",
+    "imsswitch_update": {
+        "imsswitch": [
+            {
+                "mnoname": "Aliv_BS",
+                "enableIms": false,
+                "enableServiceVolte": false,
+                "enableServiceVilte": false,
+                "enableServiceSmsip": false
+            },
+            {
+                "mnoname": "Cable_BA",
+                "enableIms": false,
+                "enableServiceVolte": false,
+                "enableServiceVowifi": false,
+                "enableServiceVilte": false
+            },
+            {
+                "mnoname": "Cable_JM",
+                "enableIms": false,
+                "enableServiceVolte": false,
+                "enableServiceVowifi": false,
+                "enableServiceVilte": false
+            }
+        ]
+    }
+}

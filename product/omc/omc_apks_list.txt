@@ -1,0 +1,7 @@
+/product/app/MDIP-SEAU-SingleSKU-VodafoneAUONLY/MDIP-SEAU-SingleSKU-VodafoneAUONLY.apk
+/product/app/Multi_SKU_MDIP-mshop-android-optus-all-all-all-pre/Multi_SKU_MDIP-mshop-android-optus-all-all-all-pre.apk
+/product/app/MySingtel/MySingtel.apk
+/product/app/SamsungMax/SamsungMax.apk
+/product/priv-app/appcloud_oobe_samsungGlobal-release_V3.22.9.4/appcloud_oobe_samsungGlobal-release_V3.22.9.4.apk
+/product/priv-app/Ignite-Globe/Ignite-Globe.apk
+/product/priv-app/Ignite-Singtel/Ignite-Singtel.apk

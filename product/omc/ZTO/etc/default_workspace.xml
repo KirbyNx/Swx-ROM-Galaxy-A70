@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+Copyright (C) 2016 The Android Open Source Project
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<favorites 
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+  <home>
+    <homeGridInfo default="4x5"/>
+    <!-- Screen: 0 -->
+    <!-- Weather Widget -->
+    <appwidget launcher:screen="0"
+               launcher:x="0"
+               launcher:y="2"
+               launcher:packageName="com.sec.android.daemonapp"
+               launcher:className="com.sec.android.daemonapp.appwidget.WeatherAppWidget2x1"
+               launcher:spanX="4"
+               launcher:spanY="1"/>
+    <!-- Voice Search -->
+    <appwidget launcher:screen="0"
+               launcher:x="0"
+               launcher:y="3"
+               launcher:packageName="com.google.android.googlequicksearchbox"
+               launcher:className="com.google.android.googlequicksearchbox.SearchWidgetProvider"
+               launcher:spanX="4"
+               launcher:spanY="1"/>
+    <!-- GALAXY Apps -->
+    <favorite launcher:screen="0"
+              launcher:x="0"
+              launcher:y="4"
+              launcher:packageName="com.sec.android.app.samsungapps"
+              launcher:className="com.sec.android.app.samsungapps.SamsungAppsMainActivity"/>
+    <!-- Gallery -->
+    <favorite launcher:screen="0"
+              launcher:x="1"
+              launcher:y="4"
+              launcher:packageName="com.sec.android.gallery3d"
+              launcher:className="com.samsung.android.gallery.app.activity.GalleryActivity"/>
+    <!-- Play Store -->
+    <favorite launcher:screen="0"
+              launcher:x="2"
+              launcher:y="4"
+              launcher:packageName="com.android.vending"
+              launcher:className="com.android.vending.AssetBrowserActivity"/>
+    <!-- Google -->
+    <folder launcher:screen="0"
+            launcher:x="3"
+            launcher:y="4"
+            launcher:title="Google">
+      <!-- Google Search -->
+      <favorite launcher:screen="0"
+                launcher:packageName="com.google.android.googlequicksearchbox"
+                launcher:className="com.google.android.googlequicksearchbox.SearchActivity"/>
+      <!-- Chrome -->
+      <favorite launcher:screen="1"
+                launcher:packageName="com.android.chrome"
+                launcher:className="com.google.android.apps.chrome.Main"/>
+      <!-- Gmail -->
+      <favorite launcher:screen="2"
+                launcher:packageName="com.google.android.gm"
+                launcher:className="com.google.android.gm.ConversationListActivityGmail"/>
+      <!-- Maps -->
+      <favorite launcher:screen="3"
+                launcher:packageName="com.google.android.apps.maps"
+                launcher:className="com.google.android.maps.MapsActivity"/>
+      <!-- YouTube -->
+      <favorite launcher:screen="4"
+                launcher:packageName="com.google.android.youtube"
+                launcher:className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"/>
+      <!-- Drive -->
+      <favorite launcher:screen="5"
+                launcher:packageName="com.google.android.apps.docs"
+                launcher:className="com.google.android.apps.docs.app.NewMainProxyActivity"/>
+      <!-- Play Music -->
+      <favorite launcher:screen="6"
+                launcher:packageName="com.google.android.music"
+                launcher:className="com.android.music.activitymanagement.TopLevelActivity"/>
+      <!-- Play Movies -->
+      <favorite launcher:screen="7"
+                launcher:packageName="com.google.android.videos"
+                launcher:className="com.google.android.youtube.videos.EntryPoint"/>
+      <!-- Duo -->
+      <favorite launcher:screen="8"
+                launcher:packageName="com.google.android.apps.tachyon"
+                launcher:className="com.google.android.apps.tachyon.MainActivity"/>
+      <!-- Photos -->
+      <favorite launcher:screen="9"
+                launcher:packageName="com.google.android.apps.photos"
+                launcher:className="com.google.android.apps.photos.home.HomeActivity"/>
+    </folder>
+    <!-- Screen: 1 -->
+	<!-- 99 -->
+	<favorite 
+		launcher:screen="1"
+		launcher:x="0"
+		launcher:y="3"              
+		launcher:packageName="com.taxis99"
+		launcher:className="com.didi.sdk.app.DidiLoadDexActivity"/>
+	<!-- Samsung Itaucard -->
+    <favorite 
+		launcher:screen="1"
+        launcher:x="1"
+        launcher:y="3"
+        launcher:packageName="com.odete.samsung"
+		launcher:className="br.com.odete.android.MainActivity"
+		launcher:postPosition="true"/>
+    <!-- Clock -->
+    <favorite launcher:screen="1"
+              launcher:x="0"
+              launcher:y="4"
+              launcher:packageName="com.sec.android.app.clockpackage"
+              launcher:className="com.sec.android.app.clockpackage.ClockPackage"/>
+    <!-- Samsung Pay -->
+    <favorite launcher:screen="1"
+              launcher:x="1"
+              launcher:y="4"
+			  launcher:packageName="com.samsung.android.spay" 
+			  launcher:className="com.samsung.android.spay.ui.SpayMainActivity"/>
+    <!-- Game Launcher -->
+    <favorite launcher:screen="1"
+              launcher:x="2"
+              launcher:y="4"
+              launcher:packageName="com.samsung.android.game.gamehome"
+              launcher:className="com.samsung.android.game.gamehome.activity.StartActivity"/>
+    <!-- Aplicativos Microsoft -->
+    <folder launcher:screen="1"
+            launcher:x="3"
+            launcher:y="4"
+            launcher:title="Aplicativos Microsoft">
+      <!-- Office Mobile -->
+      <favorite launcher:screen="0"
+                launcher:packageName="com.microsoft.office.officehubrow"
+                launcher:className="com.microsoft.office.officesuite.OfficeSuiteActivity"/>
+      <!-- Microsoft OneDrive -->
+      <favorite launcher:screen="1"
+                launcher:packageName="com.microsoft.skydrive"
+                launcher:className="com.microsoft.skydrive.MainActivity"/>
+      <!-- LinkedIn -->
+      <favorite launcher:screen="2"
+                launcher:packageName="com.linkedin.android"
+                launcher:className="com.linkedin.android.authenticator.LaunchActivity"/>
+    </folder>
+  </home>
+  <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+  <hotseat>
+    <!-- Dialer -->
+    <favorite launcher:screen="0"
+              launcher:packageName="com.samsung.android.dialer"
+              launcher:className="com.samsung.android.dialer.DialtactsActivity"/>
+    <!-- Samsung Messages -->
+    <favorite launcher:screen="1"
+              launcher:packageName="com.samsung.android.messaging"
+              launcher:className="com.android.mms.ui.ConversationComposer"/>
+    <!-- Browser -->
+    <favorite launcher:screen="2"
+              launcher:packageName="com.sec.android.app.sbrowser"
+              launcher:className="com.sec.android.app.sbrowser.SBrowserMainActivity"
+              launcher:postPosition="true"/>
+    <!-- Samsung Camera -->
+    <favorite launcher:screen="3"
+              launcher:packageName="com.sec.android.app.camera"
+              launcher:className="com.sec.android.app.camera.Camera"/>
+  </hotseat>
+</favorites>

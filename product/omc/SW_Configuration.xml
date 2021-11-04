@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>BASE_MODEL</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>OJM</MultiCode>
+    <CustomerDataSet>
+        <CSCName>BASE2_MODELFOJM</CSCName>
+        <CSCVersion>4CTJ1</CSCVersion>
+        <NbCustomer>80</NbCustomer>
+        <CustomerData src="/Customer/ACR/customer.xml" />
+        <CustomerData src="/Customer/AFG/customer.xml" />
+        <CustomerData src="/Customer/AFR/customer.xml" />
+        <CustomerData src="/Customer/ARO/customer.xml" />
+        <CustomerData src="/Customer/ATO/customer.xml" />
+        <CustomerData src="/Customer/AUT/customer.xml" />
+        <CustomerData src="/Customer/BGL/customer.xml" />
+        <CustomerData src="/Customer/BNG/customer.xml" />
+        <CustomerData src="/Customer/BRI/customer.xml" />
+        <CustomerData src="/Customer/CAC/customer.xml" />
+        <CustomerData src="/Customer/CAM/customer.xml" />
+        <CustomerData src="/Customer/CHO/customer.xml" />
+        <CustomerData src="/Customer/COO/customer.xml" />
+        <CustomerData src="/Customer/DBT/customer.xml" />
+        <CustomerData src="/Customer/DKR/customer.xml" />
+        <CustomerData src="/Customer/ECT/customer.xml" />
+        <CustomerData src="/Customer/EGY/customer.xml" />
+        <CustomerData src="/Customer/EON/customer.xml" />
+        <CustomerData src="/Customer/ETL/customer.xml" />
+        <CustomerData src="/Customer/EUR/customer.xml" />
+        <CustomerData src="/Customer/ILO/customer.xml" />
+        <CustomerData src="/Customer/INS/customer.xml" />
+        <CustomerData src="/Customer/ITV/customer.xml" />
+        <CustomerData src="/Customer/KSA/customer.xml" />
+        <CustomerData src="/Customer/LAO/customer.xml" />
+        <CustomerData src="/Customer/LUX/customer.xml" />
+        <CustomerData src="/Customer/MID/customer.xml" />
+        <CustomerData src="/Customer/MWD/customer.xml" />
+        <CustomerData src="/Customer/MYM/customer.xml" />
+        <CustomerData src="/Customer/NEE/customer.xml" />
+        <CustomerData src="/Customer/NPL/customer.xml" />
+        <CustomerData src="/Customer/ORX/customer.xml" />
+        <CustomerData src="/Customer/PAK/customer.xml" />
+        <CustomerData src="/Customer/PHE/customer.xml" />
+        <CustomerData src="/Customer/PHN/customer.xml" />
+        <CustomerData src="/Customer/ROM/customer.xml" />
+        <CustomerData src="/Customer/SEB/customer.xml" />
+        <CustomerData src="/Customer/SEE/customer.xml" />
+        <CustomerData src="/Customer/SEK/customer.xml" />
+        <CustomerData src="/Customer/SER/customer.xml" />
+        <CustomerData src="/Customer/SKZ/customer.xml" />
+        <CustomerData src="/Customer/SLK/customer.xml" />
+        <CustomerData src="/Customer/THL/customer.xml" />
+        <CustomerData src="/Customer/THR/customer.xml" />
+        <CustomerData src="/Customer/TPA/customer.xml" />
+        <CustomerData src="/Customer/TPH/customer.xml" />
+        <CustomerData src="/Customer/TTT/customer.xml" />
+        <CustomerData src="/Customer/TUN/customer.xml" />
+        <CustomerData src="/Customer/TUR/customer.xml" />
+        <CustomerData src="/Customer/XEF/customer.xml" />
+        <CustomerData src="/Customer/XEH/customer.xml" />
+        <CustomerData src="/Customer/XEO/customer.xml" />
+        <CustomerData src="/Customer/XEU/customer.xml" />
+        <CustomerData src="/Customer/XFE/customer.xml" />
+        <CustomerData src="/Customer/XME/customer.xml" />
+        <CustomerData src="/Customer/XSG/customer.xml" />
+        <CustomerData src="/Customer/XSP/customer.xml" />
+        <CustomerData src="/Customer/XTC/customer.xml" />
+        <CustomerData src="/Customer/XXV/customer.xml" />
+        <CustomerData src="/Customer/ZTO/customer.xml" />
+        <CustomerData src="/Customer/single/customer.xml" />
+        <CustomerData src="/Customer/BTC/customer.xml" />
+        <CustomerData src="/Customer/BTU/customer.xml" />
+        <CustomerData src="/Customer/CEL/customer.xml" />
+        <CustomerData src="/Customer/CPW/customer.xml" />
+        <CustomerData src="/Customer/GLB/customer.xml" />
+        <CustomerData src="/Customer/LYS/customer.xml" />
+        <CustomerData src="/Customer/MAT/customer.xml" />
+        <CustomerData src="/Customer/MM1/customer.xml" />
+        <CustomerData src="/Customer/PCL/customer.xml" />
+        <CustomerData src="/Customer/PTR/customer.xml" />
+        <CustomerData src="/Customer/SIN/customer.xml" />
+        <CustomerData src="/Customer/SIO/customer.xml" />
+        <CustomerData src="/Customer/SMA/customer.xml" />
+        <CustomerData src="/Customer/SMP/customer.xml" />
+        <CustomerData src="/Customer/STH/customer.xml" />
+        <CustomerData src="/Customer/TEB/customer.xml" />
+        <CustomerData src="/Customer/TMC/customer.xml" />
+        <CustomerData src="/Customer/WTL/customer.xml" />
+        <CustomerData src="/Customer/XFA/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>ACR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ACR</Version>
+            <CustomerEdition>ED001</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>AFG</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_AFG</Version>
+            <CustomerEdition>ED002</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>AFR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_AFR</Version>
+            <CustomerEdition>ED003</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ARO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ARO</Version>
+            <CustomerEdition>ED004</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ATO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ATO</Version>
+            <CustomerEdition>ED005</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>AUT</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_AUT</Version>
+            <CustomerEdition>ED006</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BGL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_BGL</Version>
+            <CustomerEdition>ED007</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BNG</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_BNG</Version>
+            <CustomerEdition>ED008</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BRI</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_BRI</Version>
+            <CustomerEdition>ED009</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CAC</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_CAC</Version>
+            <CustomerEdition>ED0010</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CAM</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_CAM</Version>
+            <CustomerEdition>ED0011</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CHO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_CHO</Version>
+            <CustomerEdition>ED0012</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>COO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_COO</Version>
+            <CustomerEdition>ED0013</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>DBT</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_DBT</Version>
+            <CustomerEdition>ED0014</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>DKR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_DKR</Version>
+            <CustomerEdition>ED0015</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ECT</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ECT</Version>
+            <CustomerEdition>ED0016</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>EGY</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_EGY</Version>
+            <CustomerEdition>ED0017</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>EON</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_EON</Version>
+            <CustomerEdition>ED0018</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ETL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ETL</Version>
+            <CustomerEdition>ED0019</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>EUR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_EUR</Version>
+            <CustomerEdition>ED0020</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ILO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ILO</Version>
+            <CustomerEdition>ED0021</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>INS</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_INS</Version>
+            <CustomerEdition>ED0022</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ITV</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ITV</Version>
+            <CustomerEdition>ED0023</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>KSA</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_KSA</Version>
+            <CustomerEdition>ED0024</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>LAO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_LAO</Version>
+            <CustomerEdition>ED0025</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>LUX</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_LUX</Version>
+            <CustomerEdition>ED0026</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MID</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_MID</Version>
+            <CustomerEdition>ED0027</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MWD</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_MWD</Version>
+            <CustomerEdition>ED0028</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MYM</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_MYM</Version>
+            <CustomerEdition>ED0029</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>NEE</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_NEE</Version>
+            <CustomerEdition>ED0030</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>NPL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_NPL</Version>
+            <CustomerEdition>ED0031</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ORX</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ORX</Version>
+            <CustomerEdition>ED0032</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PAK</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_PAK</Version>
+            <CustomerEdition>ED0033</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PHE</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_PHE</Version>
+            <CustomerEdition>ED0034</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PHN</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_PHN</Version>
+            <CustomerEdition>ED0035</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ROM</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ROM</Version>
+            <CustomerEdition>ED0036</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SEB</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SEB</Version>
+            <CustomerEdition>ED0037</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SEE</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SEE</Version>
+            <CustomerEdition>ED0038</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SEK</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SEK</Version>
+            <CustomerEdition>ED0039</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SER</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SER</Version>
+            <CustomerEdition>ED0040</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SKZ</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SKZ</Version>
+            <CustomerEdition>ED0041</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SLK</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SLK</Version>
+            <CustomerEdition>ED0042</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>THL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_THL</Version>
+            <CustomerEdition>ED0043</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>THR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_THR</Version>
+            <CustomerEdition>ED0044</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TPA</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TPA</Version>
+            <CustomerEdition>ED0045</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TPH</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TPH</Version>
+            <CustomerEdition>ED0046</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TTT</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TTT</Version>
+            <CustomerEdition>ED0047</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TUN</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TUN</Version>
+            <CustomerEdition>ED0048</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TUR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TUR</Version>
+            <CustomerEdition>ED0049</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEF</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XEF</Version>
+            <CustomerEdition>ED0050</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEH</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XEH</Version>
+            <CustomerEdition>ED0051</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XEO</Version>
+            <CustomerEdition>ED0052</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEU</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XEU</Version>
+            <CustomerEdition>ED0053</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XFE</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XFE</Version>
+            <CustomerEdition>ED0054</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XME</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XME</Version>
+            <CustomerEdition>ED0055</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XSG</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XSG</Version>
+            <CustomerEdition>ED0056</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XSP</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XSP</Version>
+            <CustomerEdition>ED0057</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XTC</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XTC</Version>
+            <CustomerEdition>ED0058</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XXV</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XXV</Version>
+            <CustomerEdition>ED0059</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ZTO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_ZTO</Version>
+            <CustomerEdition>ED0060</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>single</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_single</Version>
+            <CustomerEdition>ED0061</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BTC</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_BTC</Version>
+            <CustomerEdition>ED0062</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BTU</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_BTU</Version>
+            <CustomerEdition>ED0063</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CEL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_CEL</Version>
+            <CustomerEdition>ED0064</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>CPW</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_CPW</Version>
+            <CustomerEdition>ED0065</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>GLB</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_GLB</Version>
+            <CustomerEdition>ED0066</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>LYS</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_LYS</Version>
+            <CustomerEdition>ED0067</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MAT</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_MAT</Version>
+            <CustomerEdition>ED0068</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>MM1</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_MM1</Version>
+            <CustomerEdition>ED0069</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PCL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_PCL</Version>
+            <CustomerEdition>ED0070</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PTR</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_PTR</Version>
+            <CustomerEdition>ED0071</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SIN</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SIN</Version>
+            <CustomerEdition>ED0072</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SIO</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SIO</Version>
+            <CustomerEdition>ED0073</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SMA</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SMA</Version>
+            <CustomerEdition>ED0074</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SMP</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_SMP</Version>
+            <CustomerEdition>ED0075</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>STH</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_STH</Version>
+            <CustomerEdition>ED0076</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TEB</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TEB</Version>
+            <CustomerEdition>ED0077</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TMC</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_TMC</Version>
+            <CustomerEdition>ED0078</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>WTL</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_WTL</Version>
+            <CustomerEdition>ED0079</CustomerEdition>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XFA</CustomerCode>
+            <Version>SAOMC_BASE_MODEL_OJM_XFA</Version>
+            <CustomerEdition>ED0080</CustomerEdition>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>

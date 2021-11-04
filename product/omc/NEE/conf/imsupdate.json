@@ -1,0 +1,18 @@
+{
+  "update_version": 1,
+  "note": "Enabling Volte roaming for Telia norway and telia sweden",
+  "imsprofile_update": {
+    "profile": [
+      {
+        "name": "Telia Norway Volte",
+        "mnoname": "Telia_NO",
+        "support_roaming": true
+      },
+      { 
+        "name": "S Telia VoLTE",
+        "mnoname": "Telia_SE",
+        "support_roaming": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "note": "Add imsupdate for SM-A705MN with carrier = UYO",
+    "imsswitch_update": {
+        "imsswitch": [
+            {
+                "mnoname": "Claro_PY",
+                "enableIms": false,
+                "enableServiceRcs": false,
+                "enableServiceRcschat": false
+            }
+        ]
+    }
+}

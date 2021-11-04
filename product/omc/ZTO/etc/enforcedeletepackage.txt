@@ -1,0 +1,8 @@
+7
+AmazonVideo_SWA.apk
+Amazon_Shopping.apk
+AsphaltNitro.apk
+Booking_deletable.apk
+Dailyhunt.apk
+ElTiempo.apk
+GlobalGoals.apk

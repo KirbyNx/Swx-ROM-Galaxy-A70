@@ -1,0 +1,12 @@
+{
+    "note": "Add imsupdate for SM-A705MN with carrier = MXO",
+    "imsswitch_update": {
+        "imsswitch": [
+            {
+                "mnoname": "Movistar_MX",
+                "enableServiceRcs": false,
+                "enableServiceRcschat": false
+            }
+        ]
+    }
+}

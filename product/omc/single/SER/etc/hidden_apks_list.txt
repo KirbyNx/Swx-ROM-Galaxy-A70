@@ -1,0 +1,2 @@
+/hidden/app/MailApp_ruMail_28335_release.apk
+/hidden/app/ZenApp-v4.6.0.2379-prodSamsung-signed.apk
